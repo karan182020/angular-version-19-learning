@@ -1,0 +1,30 @@
+<div>
+    @if (isStudent) {
+        <p>Product discount is 50% for a student</p>
+    } @else {
+        <p>Product discount is 30% for a non-student</p>
+    }
+</div>
+
+<div>
+    List of available products:
+    @for (item of products; track item.id; let i = $index) {
+        <ul>
+            <li>#{{i}}: {{item.name}}</li>
+        </ul>
+    } @empty {
+        <p>No products available</p>
+    }
+</div>
+
+@switch (selectedProduct) {
+    @case (1) {
+        <p>Mobile</p>
+    }  
+    @case (2) {
+        <p>Laptop</p>    
+    }
+    @case (3) {
+        <p>Tablet</p>
+    }
+}
