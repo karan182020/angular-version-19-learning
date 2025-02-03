@@ -1,0 +1,14 @@
+<p>Hello {{ name()}}</p>
+
+<button (click)="greetingClicked.emit('click')">Click here -> {{ greeting()}}</button>
+<br/>
+<br/>
+
+Observable from output:
+<br/>
+{{ greetingClicked$ | async }}
+<br/>
+
+
+
+
