@@ -1,6 +1,6 @@
 <input type="text" [formControl]="name" required="">
 <button (click)="name.reset()">Reset</button>
-<p>Note: Reset button reverts the edited value to default. It will not clear the text</p>
+<p> <span class="note">Note: </span> Reset button reverts the edited value to default. It will not clear the text</p>
 <p>Valid: {{name.valid}}</p>
 <p>Touched: {{name.touched}}</p>
 <p>Dirty: {{name.dirty}}</p>
